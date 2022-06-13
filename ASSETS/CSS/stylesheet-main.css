@@ -6,3 +6,12 @@ body {
     min-width: 90vw;
     min-height: 3000px;
 }
+
+nav{
+    position: fixed;
+    min-height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 1px dotted royalblue;
+}
