@@ -57,6 +57,7 @@ body {
     min-width: 150px;
     justify-content: center;
     align-items: center;
+    border: 0px;
     z-index: 1;
 }
     .home {
@@ -110,10 +111,16 @@ body {
     grid-column-end: 7;
 }
 #searchbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 5;
     grid-column-end: 6;
+    border: 0;
 }
 .search-button {
     
