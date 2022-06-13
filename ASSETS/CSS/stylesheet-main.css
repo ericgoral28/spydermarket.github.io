@@ -1,17 +1,30 @@
 html {
-    background-color: black;
+    background-color: lightblue;
+    z-index: 0;
 }
 
 body {
     min-width: 90vw;
     min-height: 3000px;
+    z-index: 0;
 }
 
-nav{
+#nav_div {
     position: fixed;
     min-height: 100px;
     top: 0;
     left: 0;
     right: 0;
-    border: 1px dotted royalblue;
+    z-index: 0;
+    background-color: rgba(75, 75, 75, 0.5);
+    border: 2px solid rgba(75, 75, 75, 0.75);
+}
+
+#header_div {
+    position: absolute;
+    min-height: 250px;
+    top: 100px;
+    left: 0;
+    right: 0;
+    border: 1px dotted red;
 }
