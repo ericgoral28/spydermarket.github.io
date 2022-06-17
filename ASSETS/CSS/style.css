@@ -2,13 +2,54 @@
     font-family: 'Source Code Pro', monospace;
     font-variant: small-caps;
     background-color: black;
+    border: 1px dotted rgb(115, 5, 255);
     color: lime;
     box-sizing: border-box;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
 
-body {
-
+html {
+    border: none;
 }
 
+body {
+    min-height: 100vh;
+    border: none;
+}
+
+#web-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    text-align: center;
+}
+
+#floating-nav-container {
+    position: fixed;
+    min-height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#content-container {
+    min-height: 800px;
+    position: relative;
+    top: 80px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#footer-container {
+    min-height: 200px;
+    position: relative;
+    bottom: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
