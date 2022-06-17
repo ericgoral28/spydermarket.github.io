@@ -1,10 +1,10 @@
 * {
+    box-sizing: border-box;
     font-family: 'Source Code Pro', monospace;
     font-variant: small-caps;
-    background-color: black;
-    border: 1px dotted rgb(115, 5, 255);
     color: lime;
-    box-sizing: border-box;
+    border: 5px dotted rgb(115, 5, 255);
+    background-color: black;
     padding: 0;
     margin: 0;
 }
@@ -20,10 +20,11 @@ body {
 
 #web-container {
     display: grid;
+    text-align: center;
     grid-template-columns: auto;
     grid-template-rows: 100px auto auto;
     gap: 0;
-    text-align: center;
+    border-style: none;
     
 }
 
@@ -34,6 +35,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
