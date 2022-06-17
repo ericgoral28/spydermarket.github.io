@@ -5,8 +5,8 @@
     border: 1px dotted rgb(115, 5, 255);
     color: lime;
     box-sizing: border-box;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -14,15 +14,17 @@ html {
 }
 
 body {
-    min-height: 100vh;
-    border: none;
+    min-height: 100%;
+    border: 2px solid orange;
 }
 
 #web-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto;
+    gap: 0;
     text-align: center;
+    
 }
 
 #floating-nav-container {
@@ -34,22 +36,15 @@ body {
     z-index: 1;
 }
 
+
 #content-container {
     min-height: 800px;
-    position: relative;
-    top: 80px;
-    grid-column-start: 1;
-    grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
 #footer-container {
     min-height: 200px;
-    position: relative;
-    bottom: 0;
-    grid-column-start: 1;
-    grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
 }
