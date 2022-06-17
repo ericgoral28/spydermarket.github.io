@@ -10,12 +10,12 @@
 }
 
 html {
-    border: none;
+    border-style: none;
 }
 
 body {
     min-height: 100%;
-    border: 2px solid orange;
+    border-style: none;
 }
 
 #web-container {
